@@ -1,4 +1,4 @@
 .idea/
 .gradle/
-/src
+/build
 /out

@@ -1,6 +1,6 @@
 package com.pairgood;
 
-import com.pairgood.instruction.Step;
+import com.pairgood.instruction.objects.Step;
 import org.junit.Test;
 
 import java.text.MessageFormat;
