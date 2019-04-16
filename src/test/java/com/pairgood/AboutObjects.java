@@ -15,7 +15,7 @@ public class AboutObjects {
     @Test
     public void newObjectInstancesCanBeCreatedDirectly() {
         Object object = new Object();
-        assertEquals(Step.ONE, object instanceof Object, __);
+        assertEquals(Step.ONE, object instanceof Object, true);
     }
 
     @Test
@@ -27,8 +27,8 @@ public class AboutObjects {
 
         Class<?>[] ancestors = getAncestors(foo);
 
-        assertEquals(Step.TWO, ancestors[0], __);
-        assertEquals(Step.TWO, ancestors[1], __);
+        assertEquals(Step.TWO, ancestors[0], Foo.class);
+        assertEquals(Step.TWO, ancestors[1], Object.class);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class AboutObjects {
         String expectedToString = MessageFormat.format("{0}@{1}", Object.class.getName(),
                 Integer.toHexString(object.hashCode()));
 
-        assertEquals(Step.THREE, expectedToString, __);
+        assertEquals(Step.THREE, expectedToString, object.toString());
     }
 
     private Class<?>[] getAncestors(Object object) {
