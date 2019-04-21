@@ -50,8 +50,8 @@ public class AboutInheritance {
         assertEquals(TWO, max.makeSomeNoise(), "Woof!");
         assertEquals(THREE, barney.makeSomeNoise(), "Squeak!");
 
-        assertEquals(FOUR, max.canFetch(), "true");
-        assertEquals(FIVE, barney.canFetch(), "false");
+        assertEquals(FOUR, max.canFetch(), true);
+        assertEquals(FIVE, barney.canFetch(), false);
         // but can Bob the Cow fetch?
     }
 
