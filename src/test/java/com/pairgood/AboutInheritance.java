@@ -46,12 +46,12 @@ public class AboutInheritance {
         Cow bob = new Cow();
         Dog max = new Dog();
         Puppy barney = new Puppy();
-        assertEquals(ONE, bob.makeSomeNoise(), __);
-        assertEquals(TWO, max.makeSomeNoise(), __);
-        assertEquals(THREE, barney.makeSomeNoise(), __);
+        assertEquals(ONE, bob.makeSomeNoise(), "Moo!");
+        assertEquals(TWO, max.makeSomeNoise(), "Woof!");
+        assertEquals(THREE, barney.makeSomeNoise(), "Squeak!");
 
-        assertEquals(FOUR, max.canFetch(), __);
-        assertEquals(FIVE, barney.canFetch(), __);
+        assertEquals(FOUR, max.canFetch(), "true");
+        assertEquals(FIVE, barney.canFetch(), "false");
         // but can Bob the Cow fetch?
     }
 
@@ -60,9 +60,9 @@ public class AboutInheritance {
         Animal bob = new Cow();
         Animal max = new Dog();
         Animal barney = new Puppy();
-        assertEquals(SIX, bob.makeSomeNoise(), __);
-        assertEquals(SEVEN, max.makeSomeNoise(), __);
-        assertEquals(EIGHT, barney.makeSomeNoise(), __);
+        assertEquals(SIX, bob.makeSomeNoise(), "Moo!");
+        assertEquals(SEVEN, max.makeSomeNoise(), "Woof!");
+        assertEquals(EIGHT, barney.makeSomeNoise(), "Squeak!");
         // but can max or barney (here as an Animal) fetch?
         // try to write it down here
     }
