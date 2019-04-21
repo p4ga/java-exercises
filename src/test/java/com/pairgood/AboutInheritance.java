@@ -71,12 +71,12 @@ public class AboutInheritance {
     public void inheritanceHierarchy() {
         Animal someAnimal = new Cow();
         Animal bob = new Cow();
-        assertEquals(NINE, someAnimal.makeSomeNoise().equals(bob.makeSomeNoise()), __);
+        assertEquals(NINE, someAnimal.makeSomeNoise().equals(bob.makeSomeNoise()), true);
         // cow is a Cow, but it can also be an animal
-        assertEquals(TEN, bob instanceof Animal, __);
-        assertEquals(TEN, bob instanceof Cow, __);
+        assertEquals(TEN, bob instanceof Animal, true);
+        assertEquals(TEN, bob instanceof Cow, true);
         // but is it a Puppy?
-        assertEquals(TEN, bob instanceof Puppy, __);
+        assertEquals(TEN, bob instanceof Puppy, false);
     }
 
     @Test
