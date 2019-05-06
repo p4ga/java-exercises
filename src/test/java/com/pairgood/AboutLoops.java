@@ -32,7 +32,7 @@ public class AboutLoops {
         for (int i = 5; i > 0; i--) {
             value += i + " ";
         }
-        assertEquals(ONE, value, __);
+        assertEquals(ONE, value, "5 4 3 2 1 ");
     }
 
     @Test
@@ -41,7 +41,7 @@ public class AboutLoops {
         for (int i = 0; i < 11; i += 2) {
             value += i + " ";
         }
-        assertEquals(ONE, value, __);
+        assertEquals(ONE, value, "0 2 4 6 8 10 ");
     }
 
     @Test
@@ -50,7 +50,7 @@ public class AboutLoops {
         for (int i = 1; i <= 16; i *= 2) {
             value += i + " ";
         }
-        assertEquals(ONE, value, __);
+        assertEquals(ONE, value, "1 2 4 8 16 ");
     }
 
     @Test
@@ -59,7 +59,7 @@ public class AboutLoops {
         for (int i = 0, j = 10; i < 5 && j > 5; i++, j--) {
             value += i + " " + j + " ";
         }
-        assertEquals(ONE, value, __);
+        assertEquals(ONE, value, "0 10 1 9 2 8 3 7 4 6 ");
     }
 
     @Test
@@ -71,7 +71,7 @@ public class AboutLoops {
             }
             value += " - ";
         }
-        assertEquals(ONE, value, __);
+        assertEquals(ONE, value, "(0, 0) (0, 1) (0, 2)  - (1, 0) (1, 1) (1, 2)  - (2, 0) (2, 1) (2, 2)  - ");
     }
 
     @Test
@@ -81,7 +81,7 @@ public class AboutLoops {
         for (int j : is) {
             value += j + " ";
         }
-        assertEquals(ONE, value, __);
+        assertEquals(ONE, value, "1 2 3 4 ");
     }
 
     @Test
@@ -90,7 +90,7 @@ public class AboutLoops {
         while (result < 3) {
             result++;
         }
-        assertEquals(ONE, result, __);
+        assertEquals(ONE, result, 3);
     }
 
     @Test
@@ -99,6 +99,6 @@ public class AboutLoops {
         do {
             result++;
         } while (false);
-        assertEquals(ONE, result, __);
+        assertEquals(ONE, result, 1);
     }
 }
